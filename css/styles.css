@@ -1,0 +1,118 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.kalenteri-grid {       /*Kalenterin Lay-out*/
+    display: grid;
+    width: 95%;
+    max-width: 1200px;
+    height: 850px;
+    max-height: 1000px;
+    margin: 3% auto 2rem auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "luukku7 luukku18 luukku15 luukku3 luukku21 luukku5"
+    "otsikko  otsikko  otsikko luukku4 luukku1 luukku23"
+    "otsikko  otsikko  otsikko luukku19 luukku24 luukku24"
+    "otsikko  otsikko  otsikko luukku2 luukku24 luukku24"
+    "luukku6 luukku10 luukku12 luukku22 luukku8 luukku17"
+    "luukku9 luukku11 luukku13 luukku14 luukku20 luukku16"
+}
+
+
+.otsikko {            /*Esim. kalenterin nimi/tiimin nimi*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: otsikko;
+    font-size: 2rem;
+    border: 1px solid red;
+}
+
+
+.luukku {             /*Kaikkien luukkujen yhteinen tyyli*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border: 1px solid red;
+}
+
+.luukku1 {
+    grid-area:luukku1;
+}
+.luukku2 {
+    grid-area:luukku2;
+}
+.luukku3 {
+    grid-area:luukku3;
+}
+.luukku4 {
+    grid-area:luukku4;
+}
+.luukku5 {
+    grid-area:luukku5;
+}
+.luukku6 {
+    grid-area:luukku6;
+}
+.luukku7 {
+    grid-area:luukku7;
+}
+.luukku8 {
+    grid-area:luukku8;
+}
+.luukku9 {
+    grid-area:luukku9;
+}
+.luukku10 {
+    grid-area:luukku10;
+}
+.luukku11 {
+    grid-area:luukku11;
+}
+.luukku12 {
+    grid-area:luukku12;
+}
+.luukku13 {
+    grid-area:luukku13;
+}
+.luukku14 {
+    grid-area:luukku14;
+}
+.luukku15 {
+    grid-area:luukku15;
+}
+.luukku16 {
+    grid-area:luukku16;
+}
+.luukku17 {
+    grid-area:luukku17;
+}
+.luukku18 {
+    grid-area:luukku18;
+}
+.luukku19 {
+    grid-area:luukku19;
+}
+.luukku20 {
+    grid-area:luukku20;
+}
+.luukku21 {
+    grid-area:luukku21;
+}
+.luukku22 {
+    grid-area:luukku22;
+}
+.luukku23 {
+    grid-area:luukku23;
+}
+.luukku24 {
+    grid-area:luukku24;
+}
