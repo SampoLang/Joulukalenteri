@@ -4,7 +4,25 @@ body {
     flex-direction: column;
     
 }
-
+@keyframes korostus-zoomailu { /*korostuszoomailun animaatio */
+    0% {
+        transform: scale(1, 1);
+        }
+        50% {
+        transform: scale(1.5, 1.5);
+        }
+        100% {
+        transform: scale(1, 1);
+        }
+}
+.korostus { /*Päivän luukun korostamiseen käytettävä tyyli*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border: 1px solid red;
+    animation : korostus-zoomailu 5s infinite;
+}
 
 .kalenteri-grid {       /*Kalenterin Lay-out*/
     display: grid;
