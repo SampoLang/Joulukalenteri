@@ -6,13 +6,13 @@ body {
 }
 @keyframes korostus-zoomailu { /*korostuszoomailun animaatio */
     0% {
-        transform: scale(1, 1);
+        transform: scale(1, 1); border: 2px solid yellow; 
         }
         50% {
-        transform: scale(1.5, 1.5);
+        transform: scale(1.5, 1.5); border: 2px solid rgb(255, 123, 0);
         }
         100% {
-        transform: scale(1, 1);
+        transform: scale(1, 1); border: 2px solid rgb(104, 3, 3);
         }
 }
 .korostus { /*Päivän luukun korostamiseen käytettävä tyyli*/
@@ -20,8 +20,8 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    border: 1px solid red;
-    animation : korostus-zoomailu 5s infinite;
+    border: 2px solid red;
+    animation : korostus-zoomailu 5s 3;
 }
 
 .kalenteri-grid {       /*Kalenterin Lay-out*/
