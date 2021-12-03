@@ -8,11 +8,12 @@ function korostaLuukku() {
     var day = currentDate.getDate();
     var id = "luukku" + day;
     document.getElementById(id).className = "korostus";
+    //laskee päivät nykypäivään asti ja muuttaa niiden kursorit
+    for (var i = 1; i <= day; i++) {
+        pointer("luukku" + i)
+    }
 }
-//laskee päivät nykypäivään asti ja muuttaa niiden kursorit
-for (var i = 1; i <= day; i++) {
-    pointer("luukku" + i)
-}
+
 //Pointer jo klikkaus mahdollinen, laita luukun alkuun. Koko kutsu vaikka luukku yks olis: pointer("luukku1");
 // zoomaa myös luukkua jos sitä voi klikata
 function pointer(luukkunro) {
