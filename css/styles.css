@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@700&display=swap');
+
 body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    background: url(https://pixabay.com/get/g8b1ddc45b1d0307ebaab8ffb87dd884c2df607f0c49f7b3f4e9b79819cb4e9e8bb4ec80d1ade1d7ec27795a0913bded6.png) no-repeat top center;
+    background-size: cover;
     
 }
 @keyframes korostus-zoomailu { /*korostuszoomailun animaatio */
@@ -9,24 +14,27 @@ body {
         transform: scale(1, 1); border: 2px solid yellow; 
         }
         50% {
-        transform: scale(1.5, 1.5); border: 2px solid rgb(255, 123, 0);
+        transform: scale(1.25, 1.25); border: 2px solid rgb(255, 123, 0);
         }
         100% {
-        transform: scale(1, 1); border: 2px solid rgb(104, 3, 3);
+        transform: scale(1, 1); border: 2px solid rgb(255, 202, 68);
         }
 }
 .korostus { /*Päivän luukun korostamiseen käytettävä tyyli*/
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
-    border: 2px solid red;
-    animation : korostus-zoomailu 5s 3;
+    font-size: 3rem;
+    font-family: 'Sofia', cursive;
+    color: rgb(53, 71, 23);
+    border: 2px solid rgb(255, 202, 68);
+    animation : korostus-zoomailu 4s 3;
+    background-color:rgb(255, 255, 255);
 }
 
-.kalenteri-grid {       /*Kalenterin Lay-out*/
+.kalenteri-grid {    /*Kalenterin Lay-out*/
     display: grid;
-    width: 95%;
+    width: 94%;
     max-width: 1200px;
     height: 850px;
     max-height: 1000px;
@@ -49,8 +57,12 @@ body {
     justify-content: center;
     align-items: center;
     grid-area: otsikko;
-    font-size: 2rem;
-    border: 1px solid red;
+    font-size: 3rem;
+    font-family: 'Vollkorn SC', serif;
+    color: rgb(119, 46, 46);
+    transform: rotate3d(1, 1, 1, -5deg);
+    border: 1px solid rgb(253, 182, 1);
+    background-color:rgb(255, 255, 255,0.85)
 }
 
 
@@ -58,8 +70,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
-    border: 1px solid red;
+    font-size: 3rem;
+    font-family: 'Sofia', cursive;
+    color: rgb(53, 71, 23);
+    border: 1px solid rgb(253, 182, 1);
+    background-color:rgb(255, 255, 255,0.85)
 }
 
 .luukku1 {
