@@ -31,11 +31,13 @@ function pointer(luukkunro) {
         document.getElementById(luukkunro).style.cursor = "pointer";
         //lisää mouseoverin ja zoomin luukkuihin jota voi avata
         document.getElementById(luukkunro).addEventListener("mouseover", function () {
-            document.getElementById(luukkunro).style.transform = "scale(1.3)";
+            document.getElementById(luukkunro).style.transform = "scale(1.2)";
+            document.getElementById(luukkunro).style.backgroundColor ="white"; //täys valkoinen kun "mouseover"
         });
         //palauttaa zoomin normaaliksi
         document.getElementById(luukkunro).addEventListener("mouseout", function () {
             document.getElementById(luukkunro).style.transform = "scale(1.0)";
+            document.getElementById(luukkunro).style.backgroundColor = "rgb(255, 255, 255, 0.85)" //takasin läpinäkyvään kun "mouseout"
         });
     }
 }
