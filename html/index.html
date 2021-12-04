@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Joulukalenteri</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body onload="korostaLuukku()">
     <div class="kalenteri-grid">
         <div class="otsikko">Joulukalenteri</div>
@@ -14,7 +16,8 @@
         <div id=luukku2 class="luukku luukku2">2</div>
         <div id=luukku3 class="luukku luukku3">3</div>
         <div id=luukku4 class="luukku luukku4">4</div>
-        <div id=luukku5 class="luukku luukku5">5</div>
+        <div id=luukku5 class="luukku luukku5" data-modal-target="#modal">5</div>
+        <!-- Tästä aukeaa tyhjä modaali esimerkiksi -->
         <div id=luukku6 class="luukku luukku6">6</div>
         <div id=luukku7 class="luukku luukku7">7</div>
         <div id=luukku8 class="luukku luukku8">8</div>
@@ -30,11 +33,54 @@
         <div id=luukku18 class="luukku luukku18">18</div>
         <div id=luukku19 class="luukku luukku19">19</div>
         <div id=luukku20 class="luukku luukku20">20</div>
-        <div id=luukku21 class="luukku luukku21">21</div>
+        <div id=luukku21 class="luukku luukku21" data-modal-target="#modal21">21</div>
+        <!-- Lisätty modaalifunktion avaaja luukkuun 21 -->
         <div id=luukku22 class="luukku luukku22">22</div>
         <div id=luukku23 class="luukku luukku23">23</div>
         <div id=luukku24 class="luukku luukku24">24</div>
     </div>
+
+
+    <!-- MODAALIEN POHJA -->
+    <div class="modal" id="modal">
+        <!-- modaalin otsikko -->
+        <div class="modal-header">
+            <div class="title">Esim. Luukun pvm</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+
+        <!-- Modaalin sisältö -->
+        <div class="modal-body">
+            esim. diipadaapa
+
+        </div>
+    </div>
+    <!-- TÄNNE KAIKKI TOTEUTETTAVAT MODAALIT -->
+    <!-- Kopioi modaalin pohja ja anna oma id. Esim luukun 21 id = "modal" -> "modal21" -->
+
+    <!-- MODAALI LUUKULLE 21 -->
+    <div class="modal" id="modal21">
+        <!-- esim luukun nro id:ksi -->
+        <div class="modal-header">
+            <div class="title">Kahdeskymmenesensimmäinen</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+
+        <!-- Modal content -->
+        <div class="modal-body">
+            <!-- Upotettu youtubevideo -->
+            <iframe width="1120" height="630" src="https://www.youtube.com/embed/w0w3dtU7zdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+
+    <!-- Taustan himmennystä varten modaalien ollessa auki -->
+    <div id="overlay"></div>
     <script src="../js/kalenteri.js"></script>
+
 </body>
+
+
+
 </html>

@@ -1,26 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@700&display=swap');
-
 body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     background: url("../media/Taustakuva-body.png") no-repeat top center;
     background-size: cover;
-    
 }
-@keyframes korostus-zoomailu { /*korostuszoomailun animaatio */
+
+@keyframes korostus-zoomailu {
+    /*korostuszoomailun animaatio */
     0% {
-        transform: scale(1, 1); border: 2px solid yellow; 
-        }
-        50% {
-        transform: scale(1.25, 1.25); border: 2px solid rgb(255, 123, 0);
-        }
-        100% {
-        transform: scale(1, 1); border: 2px solid rgb(255, 202, 68);
-        }
+        transform: scale(1, 1);
+        border: 2px solid yellow;
+    }
+    50% {
+        transform: scale(1.25, 1.25);
+        border: 2px solid rgb(255, 123, 0);
+    }
+    100% {
+        transform: scale(1, 1);
+        border: 2px solid rgb(255, 202, 68);
+    }
 }
-.korostus { /*Päivän luukun korostamiseen käytettävä tyyli*/
+
+.korostus {
+    /*Päivän luukun korostamiseen käytettävä tyyli*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,11 +33,12 @@ body {
     font-family: 'Sofia', cursive;
     color: rgb(53, 71, 23);
     border: 2px solid rgb(255, 202, 68);
-    animation : korostus-zoomailu 4s 3;
-    background-color:rgb(255, 255, 255);
+    animation: korostus-zoomailu 4s 3;
+    background-color: rgb(255, 255, 255);
 }
 
-.kalenteri-grid {    /*Kalenterin Lay-out*/
+.kalenteri-grid {
+    /*Kalenterin Lay-out*/
     display: grid;
     width: 94%;
     max-width: 1200px;
@@ -42,17 +48,11 @@ body {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
     grid-gap: 1rem;
-    grid-template-areas: 
-    "luukku7 luukku18 luukku15 luukku3 luukku21 luukku5"
-    "otsikko  otsikko  otsikko luukku4 luukku1 luukku23"
-    "otsikko  otsikko  otsikko luukku19 luukku24 luukku24"
-    "otsikko  otsikko  otsikko luukku2 luukku24 luukku24"
-    "luukku6 luukku10 luukku12 luukku22 luukku8 luukku17"
-    "luukku9 luukku11 luukku13 luukku14 luukku20 luukku16"
+    grid-template-areas: "luukku7 luukku18 luukku15 luukku3 luukku21 luukku5" "otsikko  otsikko  otsikko luukku4 luukku1 luukku23" "otsikko  otsikko  otsikko luukku19 luukku24 luukku24" "otsikko  otsikko  otsikko luukku2 luukku24 luukku24" "luukku6 luukku10 luukku12 luukku22 luukku8 luukku17" "luukku9 luukku11 luukku13 luukku14 luukku20 luukku16"
 }
 
-
-.otsikko {            /*Esim. kalenterin nimi/tiimin nimi*/
+.otsikko {
+    /*Esim. kalenterin nimi/tiimin nimi*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,11 +62,11 @@ body {
     color: rgb(119, 46, 46);
     transform: rotate3d(1, 1, 1, -5deg);
     border: 1px solid rgb(253, 182, 1);
-    background-color:rgb(255, 255, 255,0.85)
+    background-color: rgb(255, 255, 255, 0.85)
 }
 
-
-.luukku {             /*Kaikkien luukkujen yhteinen tyyli*/
+.luukku {
+    /*Kaikkien luukkujen yhteinen tyyli*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,78 +74,180 @@ body {
     font-family: 'Sofia', cursive;
     color: rgb(53, 71, 23);
     border: 1px solid rgb(253, 182, 1);
-    background-color:rgb(255, 255, 255,0.85)
+    background-color: rgb(255, 255, 255, 0.85)
 }
 
 .luukku1 {
-    grid-area:luukku1;
+    grid-area: luukku1;
 }
+
 .luukku2 {
-    grid-area:luukku2;
+    grid-area: luukku2;
 }
+
 .luukku3 {
-    grid-area:luukku3;
+    grid-area: luukku3;
 }
+
 .luukku4 {
-    grid-area:luukku4;
+    grid-area: luukku4;
 }
+
 .luukku5 {
-    grid-area:luukku5;
+    grid-area: luukku5;
 }
+
 .luukku6 {
-    grid-area:luukku6;
+    grid-area: luukku6;
 }
+
 .luukku7 {
-    grid-area:luukku7;
+    grid-area: luukku7;
 }
+
 .luukku8 {
-    grid-area:luukku8;
+    grid-area: luukku8;
 }
+
 .luukku9 {
-    grid-area:luukku9;
+    grid-area: luukku9;
 }
+
 .luukku10 {
-    grid-area:luukku10;
+    grid-area: luukku10;
 }
+
 .luukku11 {
-    grid-area:luukku11;
+    grid-area: luukku11;
 }
+
 .luukku12 {
-    grid-area:luukku12;
+    grid-area: luukku12;
 }
+
 .luukku13 {
-    grid-area:luukku13;
+    grid-area: luukku13;
 }
+
 .luukku14 {
-    grid-area:luukku14;
+    grid-area: luukku14;
 }
+
 .luukku15 {
-    grid-area:luukku15;
+    grid-area: luukku15;
 }
+
 .luukku16 {
-    grid-area:luukku16;
+    grid-area: luukku16;
 }
+
 .luukku17 {
-    grid-area:luukku17;
+    grid-area: luukku17;
 }
+
 .luukku18 {
-    grid-area:luukku18;
+    grid-area: luukku18;
 }
+
 .luukku19 {
-    grid-area:luukku19;
+    grid-area: luukku19;
 }
+
 .luukku20 {
-    grid-area:luukku20;
+    grid-area: luukku20;
 }
+
 .luukku21 {
-    grid-area:luukku21;
+    grid-area: luukku21;
 }
+
 .luukku22 {
-    grid-area:luukku22;
+    grid-area: luukku22;
 }
+
 .luukku23 {
-    grid-area:luukku23;
+    grid-area: luukku23;
 }
+
 .luukku24 {
-    grid-area:luukku24;
+    grid-area: luukku24;
+}
+
+
+/*MODAALIT*/
+
+
+/*pohjarakenne*/
+
+.modal {
+    position: fixed;
+    z-index: 10;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 600px;
+    max-width: 80%;
+    background-color: rgb(255, 255, 255);
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-body {
+    padding: 10px 15px;
+}
+
+
+/*Otsikon rakenne*/
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1px solid black;
+}
+
+.modal-header .title {
+    font-size: 1, 25rem;
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1, 25rem;
+}
+
+
+/*taustan pimennys modaalin ollessa auki*/
+
+#overlay {
+    position: fixed;
+    transition: 200ms ease-in-out;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+/* Tänne yksittäisten modaalien muokkaus tarvittaessa*/
+
+#modal21 {
+    background-color: tomato;
+    width: 1200px;
 }
