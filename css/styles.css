@@ -220,7 +220,7 @@ body {
     cursor: pointer;
     border: none;
     outline: none;
-    background: none;
+    background: red;
     font-size: 1, 25rem;
 }
 
@@ -246,7 +246,16 @@ body {
 
 
 /* Tänne yksittäisten modaalien muokkaus tarvittaessa*/
-
+#modal1{
+    width: 1700px;
+    height: 900px;
+    background-image: url("../media/luukku1background.jpg");
+    color: rgb(253, 182, 1);
+    font-size: 1em;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 #modal21 {
     background-color: tomato;
     width: 1200px;

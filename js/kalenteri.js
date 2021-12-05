@@ -29,12 +29,12 @@ function pointer(luukkunro) {
     if (luukkuDay <= day) {
         document.getElementById(luukkunro).style.cursor = "pointer";
         //lisää mouseoverin ja zoomin luukkuihin jota voi avata
-        document.getElementById(luukkunro).addEventListener("mouseover", function() {
+        document.getElementById(luukkunro).addEventListener("mouseover", function () {
             document.getElementById(luukkunro).style.transform = "scale(1.2)";
             document.getElementById(luukkunro).style.backgroundColor = "white"; //täys valkoinen kun "mouseover"
         });
         //palauttaa zoomin normaaliksi
-        document.getElementById(luukkunro).addEventListener("mouseout", function() {
+        document.getElementById(luukkunro).addEventListener("mouseout", function () {
             document.getElementById(luukkunro).style.transform = "scale(1.0)";
             document.getElementById(luukkunro).style.backgroundColor = "rgb(255, 255, 255, 0.85)" //takasin läpinäkyvään kun "mouseout"
         });
@@ -79,3 +79,31 @@ function closeModal(modal) {
     overlay.classList.remove('active')
 
 }
+
+//-----------------Luukku1-----------------------------------//
+function luukku1() {
+    var joulukuusi = "";
+    var lkm = document.getElementById("luukku1KuusenKoko").value;
+    var aukot = '<img src ="../media/emptyspace.png" alt="jouluhavu">';
+    lkm = parseInt(lkm);
+    if (lkm > 6 || lkm <= 0) {
+        document.getElementById("varoitus").innerHTML = "SYÖTÄ KUUSI VÄLILTÄ 1-6"
+    }
+    else {
+        for (i = 1; i <= lkm; i++) {
+            joulukuusi += aukot;
+            for (j = i; j < lkm; j++) {
+                joulukuusi += aukot;
+            }
+            for (k = 0; k < (i * 2) - 1; k++) {
+                joulukuusi += '<img src ="../media/threebranch.png" alt="jouluhavu">';
+            }
+            joulukuusi += "<br>";
+        }
+        document.getElementById("modal1").style.backgroundImage = 'url("../media/luukku1background_after.jpg")';
+    }
+    document.getElementById("modal1Content").innerHTML += joulukuusi;
+    document.getElementById("KuusenKokoNappi").removeEventListener("click", luukku1);
+    document.getElementById("KuusenKokoNappi").value = "Pukki kiittää";
+}
+//--------------------------------------------------------------//
