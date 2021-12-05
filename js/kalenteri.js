@@ -86,8 +86,8 @@ function luukku1() {
     var lkm = document.getElementById("luukku1KuusenKoko").value;
     var aukot = '<img src ="../media/emptyspace.png" alt="jouluhavu">';
     lkm = parseInt(lkm);
-    if (lkm > 6 || lkm <= 0) {
-        document.getElementById("varoitus").innerHTML = "SYÖTÄ KUUSI VÄLILTÄ 1-6"
+    if (lkm > 10 || lkm <= 4) {
+        document.getElementById("varoitus").innerHTML = "SYÖTÄ HAVURIVIT VÄLILTÄ 4-10"
     }
     else {
         for (i = 1; i <= lkm; i++) {
