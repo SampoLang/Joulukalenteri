@@ -107,3 +107,26 @@ function luukku1() {
     document.getElementById("KuusenKokoNappi").value = "Pukki kiittää";
 }
 //--------------------------------------------------------------//
+//---------------------------Luukku2-----------------------------//
+function luukku2() {
+    var laulu = document.getElementById("joululaulu");
+    var luukku = document.getElementById("luukku2");
+    var duration = laulu.duration;
+    document.getElementById("luukku2").style.backgroundImage = 'url("../media/vesku.jpg")';
+    document.getElementById("luukku2").animate([
+        { transform: "scale(1, 1)" },
+        { transform: "scale(10.00, 10.00)" },
+        {transform:"rotate(180deg)"},
+        { transform: "scale(1, 1)" },
+    ], {
+        duration: 13374, iterations: 1
+    });
+
+    console.log(duration);
+    laulu.play();
+    setTimeout(function () {
+        luukku.style.backgroundImage = "none";
+        luukku.style.zIndex = "10";
+
+    }, 13374);
+}
