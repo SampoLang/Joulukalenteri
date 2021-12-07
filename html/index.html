@@ -10,7 +10,12 @@
 </head>
 
 <body onload="korostaLuukku()">
+<<<<<<< HEAD
     <img id="torilla" src="https://is.mediadelivery.fi/img/978/ca58daa7671d44b097dddb47c67a868e.jpg.webp">
+=======
+    <!-- luukku 6 kuva aukeaa hetkeksi-->
+    <img id = "torilla" src="https://is.mediadelivery.fi/img/978/ca58daa7671d44b097dddb47c67a868e.jpg.webp">
+>>>>>>> daad53313abb9cf1f07f7ef5c57977629dcb6d7d
     <div class="kalenteri-grid">
         <div class="otsikko">Joulukalenteri</div>
         <div id=luukku1 class="luukku luukku1" data-modal-target="#modal1">1</div>
@@ -26,7 +31,7 @@
         <div id=luukku8 class="luukku luukku8" data-modal-target="#modal8">8</div>
         <div id=luukku9 class="luukku luukku9" data-modal-target="#modal9">9</div>
         <div id=luukku10 class="luukku luukku10" data-modal-target="#modal10">10</div>
-        <div id=luukku11 class="luukku luukku11">11</div>
+        <div id=luukku11 class="luukku luukku11" onclick = "aikaAlert()" data-modal-target="#modal11">11</div>
         <div id=luukku12 class="luukku luukku12">12</div>
         <div id=luukku13 class="luukku luukku13">13</div>
         <div id=luukku14 class="luukku luukku14">14</div>
@@ -160,6 +165,14 @@
         <div class="modal-body">
             <img src="../media/goat-luukku10.jpg" alt="Goat" id="goat10">
         </div>
+    </div>
+    <!-- MODAALI LUUKULLE 11 -->
+    <div class="modal" id="modal11">
+        <div class="modal-header">
+            <div class="title">Luukku 11</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body" id= "luukku-11-tuloste"></div>
     </div>
 
     <!-- MODAALI LUUKULLE 21 -->
