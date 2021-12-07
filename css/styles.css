@@ -277,6 +277,22 @@ body {
 	width: 6vh;
 	height: 6vh;
 }
+#modal10 {
+	width: 300vh;
+	height: 100vh;
+	background-color: black;
+	background-image: url("../media/Messi-10.jpg");
+	color: rgb(253, 182, 1);
+	font-size: 2em;
+	font-weight: bold;
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: center top;
+}
+#goat10 {
+	height: 15%;
+	width: 22%;
+}
 #modal21 {
 	background-color: tomato;
 	width: 1200px;
