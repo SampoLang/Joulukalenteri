@@ -130,3 +130,12 @@ function luukku2() {
 
     }, 13374);
 }
+//-------------------------------Luukku4------------------------------//
+var lkm =0;
+function reveal(id) {
+        if (lkm == 4) {
+            document.getElementById("luukku4H1").innerHTML = "Onneksi olkoon! Löysit kaikki tähdet pukille."
+        }
+        document.getElementById(id).style.opacity = "1"
+        lkm++;
+}

@@ -273,9 +273,62 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
 #modal1 img {
 	width: 6vh;
 	height: 6vh;
+}
+#modal4 {
+	width: 450vh;
+	height: 95vh;
+	background-image: url("../media/luukku4sky.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-size: 3vh;
+	font-weight: bold;
+	color: rgb(253, 182, 1);
+}
+#pukkiReki {
+	position: relative;
+	left: 20vh;
+	top: 20vh;
+}
+.star {
+	display: block;
+	width: 10vh;
+	height: 10vh;
+	cursor: pointer;
+}
+#star1 {
+	left: 100vh;
+	opacity: 0;
+	position: fixed;
+}
+#star2 {
+	left: 120vh;
+	top: 10vh;
+	position: absolute;
+	opacity: 0;
+	
+}
+#star3 {
+	left: 20vh;
+	top: 12vh;
+	position: absolute;
+	opacity: 0;
+	
+}
+#star4 {
+	right: 40vh;
+	bottom: 25vh;
+	position: absolute;
+	opacity: 0;
+}
+#star5 {
+	left: 30vh;
+	bottom: 25vh;
+	position: absolute;
+	opacity: 0;
 }
 #modal10 {
 	width: 300vh;

@@ -17,7 +17,7 @@
             <audio id="joululaulu" src = "../media/Joulunteen.mp3">
             </div>
         <div id=luukku3 class="luukku luukku3">3</div>
-        <div id=luukku4 class="luukku luukku4">4</div>
+        <div id=luukku4 class="luukku luukku4" data-modal-target="#modal4">4</div>
         <div id=luukku5 class="luukku luukku5" data-modal-target="#modal">5</div>
         <!-- Tästä aukeaa tyhjä modaali esimerkiksi -->
         <div id=luukku6 class="luukku luukku6">6</div>
@@ -64,7 +64,7 @@
     <div class="modal" id="modal1">
         <!-- modaalin otsikko -->
         <div class="modal-header">
-            <div class="title">Ensimmäinen luukku</div>
+            <div class="title">Ensimmäinen luukku: Pukin kuusi</div>
             <button data-close-button class="close-button">&times;</button>
         </div>
 
@@ -80,7 +80,29 @@
                 </p>
         </div>
     </div>
+    <!-- MODAALI LUUKULLE 4-->
+    <div class="modal" id="modal4">
+        <!-- modaalin otsikko -->
+        <div class="modal-header">
+            <div class="title">Luukku 4: Joulupukin tähtipeli</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
 
+        <!-- Modaalin sisältö -->
+        <div class="modal-body" id ="luukku4Content">
+            <p id="luukku4H1">Etsi Pukille viisi kirkasta tähteä taivaalta</p>
+            <img src="../media/SantaSleigh.png" id="pukkiReki">
+            <img src="../media/star.png" class="star" id="star1" onclick='reveal("star1")'>
+            <img src="../media/star.png" class="star" id="star2"onclick='reveal("star2")'>
+            <img src="../media/star.png" class="star" id="star3"onclick='reveal("star3")'>
+            <img src="../media/star.png" class="star" id="star4"onclick='reveal("star4")'>
+            <img src="../media/star.png" class="star" id="star5"onclick='reveal("star5")'>
+
+
+            
+
+        </div>
+    </div>
     <!-- MODAALI LUUKULLE 10 -->
     <div class="modal" id="modal10">
         <!-- esim luukun nro id:ksi -->
