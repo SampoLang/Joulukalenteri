@@ -289,6 +289,7 @@ body {
 	width: 450vh;
 	height: 95vh;
 	background-image: url("../media/luukku3background.jpg");
+	background-size: cover;
 	font-size: 3em;
 	color: rgb(253, 182, 1);
 
