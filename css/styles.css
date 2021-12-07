@@ -221,7 +221,12 @@ body {
 	padding: 10px 15px;
 }
 
+
 /*Otsikon rakenne*/
+
+
+/*ModaaliOtsikon rakenne*/
+
 
 .modal-header {
 	padding: 10px 15px;
@@ -296,4 +301,11 @@ body {
 #modal21 {
 	background-color: tomato;
 	width: 1200px;
+}
+/*----___---___---___LUUKKU6---___---___---___*/
+#torilla{
+	display: none;
+	width: 99%;
+	top: 100px;
+
 }
