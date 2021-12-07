@@ -68,8 +68,17 @@ closeModalButtons.forEach(button => {
 
 function openModal(modal) {
     if (modal == null) return
-    modal.classList.add('active')
-    overlay.classList.add('active')
+
+    //nappaa modal-id:n järjestysluvun
+    //var luukku = new Date(2021, 11, modal.id.substr(5));
+    var luukku = new Date(2021, 11, 1);
+
+    if (currentDate>luukku) {
+        modal.classList.add('active')
+        overlay.classList.add('active')
+    } else {
+        alert("Hiljaa hyvä tulee!");
+    }
 
 }
 
