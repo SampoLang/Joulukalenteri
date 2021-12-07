@@ -10,6 +10,7 @@
 </head>
 
 <body onload="korostaLuukku()">
+    <img id = "torilla" src="https://is.mediadelivery.fi/img/978/ca58daa7671d44b097dddb47c67a868e.jpg.webp">
     <div class="kalenteri-grid">
         <div class="otsikko">Joulukalenteri</div>
         <div id=luukku1 class="luukku luukku1" data-modal-target="#modal1">1</div>
@@ -20,7 +21,7 @@
         <div id=luukku4 class="luukku luukku4">4</div>
         <div id=luukku5 class="luukku luukku5" data-modal-target="#modal">5</div>
         <!-- Tästä aukeaa tyhjä modaali esimerkiksi -->
-        <div id=luukku6 class="luukku luukku6">6</div>
+        <div id=luukku6 class="luukku luukku6" onclick="avaaLuukku6()">6</div>
         <div id=luukku7 class="luukku luukku7">7</div>
         <div id=luukku8 class="luukku luukku8" data-modal-target="#modal8">8</div>
         <div id=luukku9 class="luukku luukku9" data-modal-target="#modal9">9</div>
@@ -67,7 +68,7 @@
             <div class="title">Ensimmäinen luukku</div>
             <button data-close-button class="close-button">&times;</button>
         </div>
-
+       
         <!-- Modaalin sisältö -->
         <div class="modal-body" id="modal1Content">
             <form name="KuusiForm" id="kuusiForm">
@@ -148,8 +149,13 @@
         </div>
     </div>
 
+    
+  
 
 
+
+
+    
     <!-- Taustan himmennystä varten modaalien ollessa auki -->
     <div id="overlay"></div>
     <script src="../js/kalenteri.js"></script>

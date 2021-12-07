@@ -130,3 +130,16 @@ function luukku2() {
 
     }, 13374);
 }
+
+//-----------------------------------------------------------------------//
+//---------------------------LUUkku 6--------------------------------------------//
+function avaaLuukku6(){
+    document.getElementById("torilla").style.display = "inline"
+    window.scrollTo(0,0)
+    setTimeout(function(){
+        document.getElementById("torilla").style.display = "none";
+        }, 500);
+   
+}
+
+
