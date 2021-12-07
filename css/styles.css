@@ -370,6 +370,13 @@ body {
 	height: 15%;
 	width: 22%;
 }
+#modal11{
+	
+	background-color: rgb(75, 34, 0);
+	font-size: xx-large;
+	font-family: Tahoma, sans-serif;
+	color: rgb(229, 252, 252);
+}
 #modal21 {
 	background-color: tomato;
 	width: 1200px;

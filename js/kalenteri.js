@@ -152,3 +152,20 @@ function avaaLuukku6(){
 }
 
 
+
+//---------------------------LUUkku 11-------------------------------------------//
+function aikaAlert(){
+    var now = new Date().getTime();
+    var aatto = new Date('December 24, 2021 00:00:00').getTime();
+    var msAattoon = aatto - now;
+    var sAattoon = msAattoon / 1000;
+    var minAattoon = sAattoon / 60;
+    var hAattoon = minAattoon / 60;
+    var dAattoon = hAattoon / 24;
+
+    var dleft = Math.floor(dAattoon);
+    var hleft = hAattoon - dleft * 24
+    var minleft =  (hleft - Math.floor(hleft)) * 60;
+    var secleft = (minleft - Math.floor(minleft)) * 60;
+    document.getElementById("luukku-11-tuloste").innerHTML = "Jouluaattoon on tästä hetkestä " +Math.floor(dleft) + " päivää, " + Math.floor(hleft) +  " tuntia, " + Math.floor(minleft) +" minuuttia ja " + Math.floor(secleft) + " sekuntia.<br><br>";
+}
