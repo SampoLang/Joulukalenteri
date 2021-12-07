@@ -268,6 +268,7 @@ body {
 }
 
 /* Tänne yksittäisten modaalien muokkaus tarvittaessa*/
+/*__________________LUUKKU 1______________________*/
 #modal1 {
 	width: 300vh;
 	height: 100vh;
@@ -283,6 +284,34 @@ body {
 	width: 6vh;
 	height: 6vh;
 }
+/*__________________LUUKKU 3______________________*/
+#modal3 {
+	width: 450vh;
+	height: 95vh;
+	background-image: url("../media/luukku3background.jpg");
+	font-size: 3em;
+	color: rgb(253, 182, 1);
+
+}
+#elf {
+	height: 30vh;
+	width: 30vh;
+	position: absolute;
+	bottom: 3vh;
+	animation: tontunVoltti 3s infinite linear;
+
+}
+@keyframes tontunVoltti {
+	0% {left: 3vh; bottom: 3vh;}
+	30% {left: 50vh; bottom: 50vh;}
+	40% {left: 70vh; bottom: 70vh;}
+	60% {left: 100vh; bottom: 40vh;}
+	80% {left: 120vh; bottom: 3vh;}
+	100% {left: 3vh; bottom: 3vh;}
+	}
+
+
+/*__________________LUUKKU 4______________________*/
 #modal4 {
 	width: 450vh;
 	height: 95vh;
@@ -335,6 +364,8 @@ body {
 	position: absolute;
 	opacity: 0;
 }
+/*____________________________________________________*/
+
 #modal8 {
 	width: 100vh;
 	height: 80vh;

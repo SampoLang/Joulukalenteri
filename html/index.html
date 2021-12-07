@@ -10,14 +10,14 @@
 </head>
 
 <body onload="korostaLuukku()">
-    <img id = "torilla" src="https://is.mediadelivery.fi/img/978/ca58daa7671d44b097dddb47c67a868e.jpg.webp">
+    <img id="torilla" src="https://is.mediadelivery.fi/img/978/ca58daa7671d44b097dddb47c67a868e.jpg.webp">
     <div class="kalenteri-grid">
         <div class="otsikko">Joulukalenteri</div>
         <div id=luukku1 class="luukku luukku1" data-modal-target="#modal1">1</div>
-        <div id=luukku2 class="luukku luukku2" onclick="luukku2()">2 
-            <audio id="joululaulu" src = "../media/Joulunteen.mp3">
-            </div>
-        <div id=luukku3 class="luukku luukku3">3</div>
+        <div id=luukku2 class="luukku luukku2" onclick="luukku2()">2
+            <audio id="joululaulu" src="../media/Joulunteen.mp3">
+        </div>
+        <div id=luukku3 class="luukku luukku3" data-modal-target="#modal3">3</div>
         <div id=luukku4 class="luukku luukku4" data-modal-target="#modal4">4</div>
         <div id=luukku5 class="luukku luukku5" data-modal-target="#modal">5</div>
         <!-- Tästä aukeaa tyhjä modaali esimerkiksi -->
@@ -68,17 +68,29 @@
             <div class="title">Ensimmäinen luukku: Pukin kuusi</div>
             <button data-close-button class="close-button">&times;</button>
         </div>
-       
-        <!-- Modaalin sisältö -->
         <div class="modal-body" id="modal1Content">
             <form name="KuusiForm" id="kuusiForm">
                 <p>
-                    <label id ="varoitus">Kuinka ison kuusen haluat pukille? (optimi 7-10)</label>
+                    <label id="varoitus">Kuinka ison kuusen haluat pukille? (optimi 7-10)</label>
                     <input type="text" id="luukku1KuusenKoko" size="3">
                 </p>
                 <p>
-                    <input type="button" id="KuusenKokoNappi" value ="Luo jouluinen joulukuusi" onclick ="luukku1()">
+                    <input type="button" id="KuusenKokoNappi" value="Luo jouluinen joulukuusi" onclick="luukku1()">
                 </p>
+        </div>
+    </div>
+    <!-----MODAALI LUUKULLE 3-->
+    <div class="modal" id="modal3">
+        <!-- modaalin otsikko -->
+        <div class="modal-header">
+            <div class="title">Luukku 3: Pomppiva tonttu</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+
+        <!-- Modaalin sisältö -->
+        <div class="modal-body">
+           <img src="../media/elf.png" id ="elf">
+
         </div>
     </div>
     <!-- MODAALI LUUKULLE 4-->
@@ -90,41 +102,38 @@
         </div>
 
         <!-- Modaalin sisältö -->
-        <div class="modal-body" id ="luukku4Content">
+        <div class="modal-body" id="luukku4Content">
             <p id="luukku4H1">Etsi Pukille viisi kirkasta tähteä taivaalta</p>
             <img src="../media/SantaSleigh.png" id="pukkiReki">
             <img src="../media/star.png" class="star" id="star1" onclick='reveal("star1")'>
-            <img src="../media/star.png" class="star" id="star2"onclick='reveal("star2")'>
-            <img src="../media/star.png" class="star" id="star3"onclick='reveal("star3")'>
-            <img src="../media/star.png" class="star" id="star4"onclick='reveal("star4")'>
-            <img src="../media/star.png" class="star" id="star5"onclick='reveal("star5")'>
-
-
-            
+            <img src="../media/star.png" class="star" id="star2" onclick='reveal("star2")'>
+            <img src="../media/star.png" class="star" id="star3" onclick='reveal("star3")'>
+            <img src="../media/star.png" class="star" id="star4" onclick='reveal("star4")'>
+            <img src="../media/star.png" class="star" id="star5" onclick='reveal("star5")'>
 
         </div>
     </div>
-   <!-- MODAALI LUUKULLE 8 -->
+    <!-- MODAALI LUUKULLE 8 -->
     <div class="modal" id="modal8">
-          <!-- esim luukun nro id:ksi -->
+        <!-- esim luukun nro id:ksi -->
         <div class="modal-header">
-           <div class="title">LUUKKU 8</div>
+            <div class="title">LUUKKU 8</div>
             <button data-close-button class="close-button">&times;</button>
         </div>
-       
+
         <!-- Modal content -->
         <div class="modal-body"></div>
     </div>
 
     <!-- MODAALI LUUKULLE 9 -->
     <div class="modal" id="modal9">
-         <!-- esim luukun nro id:ksi -->
+        <!-- esim luukun nro id:ksi -->
         <div class="modal-header">
             <div class="title">LUUKKU 9</div>
-             <button data-close-button class="close-button">&times;</button>
+            <button data-close-button class="close-button">&times;</button>
         </div>
-    
-         <!-- Modal content -->
+
+        <!-- Modal content -->
         <div class="modal-body">
             <p style="display: flex; justify-content: center; align-items: center;">Joulu oveen kolkuttaa, <br>
                 hymyy tuiskusäässä:<br>
@@ -138,7 +147,7 @@
                 - Z.Topelius (1818 - 1898)</p>
         </div>
     </div>
-    
+
     <!-- MODAALI LUUKULLE 10 -->
     <div class="modal" id="modal10">
         <!-- esim luukun nro id:ksi -->
@@ -149,7 +158,7 @@
 
         <!-- Modal content -->
         <div class="modal-body">
-           <img src="../media/goat-luukku10.jpg" alt="Goat" id="goat10">
+            <img src="../media/goat-luukku10.jpg" alt="Goat" id="goat10">
         </div>
     </div>
 
@@ -171,13 +180,13 @@
         </div>
     </div>
 
-    
-  
 
 
 
 
-    
+
+
+
     <!-- Taustan himmennystä varten modaalien ollessa auki -->
     <div id="overlay"></div>
     <script src="../js/kalenteri.js"></script>
