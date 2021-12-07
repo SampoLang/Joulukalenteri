@@ -277,6 +277,16 @@ body {
 	width: 6vh;
 	height: 6vh;
 }
+#modal8 {
+	width: 100vh;
+	height: 80vh;
+	color: rgb(253, 182, 1);
+	font-size: 1em;
+	font-weight: bold;
+	background-image:url("../media/Luukku8.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 #modal9 {
 	width: 300vh;
 	height: 100vh;
