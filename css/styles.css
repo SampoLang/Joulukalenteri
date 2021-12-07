@@ -409,6 +409,13 @@ body {
 	font-family: Tahoma, sans-serif;
 	color: rgb(229, 252, 252);
 }
+#modal19 {
+	width: auto;
+	background-color: darkgreen;
+	color: ivory;
+	font-size: xx-large;
+}
+
 #modal21 {
 	background-color: tomato;
 	width: 1200px;
