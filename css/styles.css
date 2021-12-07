@@ -412,6 +412,14 @@ body {
 	background-color: tomato;
 	width: 1200px;
 }
+#modal23{
+	width: auto;
+	background-color: rgb(255, 251, 0);
+	color: rgb(0, 117, 252);
+	font-size: xx-large;
+	
+}
+
 /*----___---___---___LUUKKU6---___---___---___*/
 #torilla{
 	display: none;
