@@ -221,7 +221,12 @@ body {
 	padding: 10px 15px;
 }
 
+
 /*Otsikon rakenne*/
+
+
+/*ModaaliOtsikon rakenne*/
+
 
 .modal-header {
 	padding: 10px 15px;
@@ -330,6 +335,25 @@ body {
 	position: absolute;
 	opacity: 0;
 }
+#modal8 {
+	width: 100vh;
+	height: 80vh;
+	color: rgb(253, 182, 1);
+	font-size: 1em;
+	font-weight: bold;
+	background-image:url("../media/Luukku8.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#modal9 {
+	width: 300vh;
+	height: 100vh;
+	background-color: black;
+	color: rgb(253, 182, 1);
+	font-size: 3em;
+	font-family: 'Sofia', cursive;
+	font-weight: bold;
+}
 #modal10 {
 	width: 300vh;
 	height: 100vh;
@@ -349,4 +373,11 @@ body {
 #modal21 {
 	background-color: tomato;
 	width: 1200px;
+}
+/*----___---___---___LUUKKU6---___---___---___*/
+#torilla{
+	display: none;
+	width: 99%;
+	top: 100px;
+
 }
