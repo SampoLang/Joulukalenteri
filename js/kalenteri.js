@@ -178,3 +178,11 @@ function aikaAlert(){
     var secleft = (minleft - Math.floor(minleft)) * 60;
     document.getElementById("luukku-11-tuloste").innerHTML = "Jouluaattoon on tästä hetkestä " +Math.floor(dleft) + " päivää, " + Math.floor(hleft) +  " tuntia, " + Math.floor(minleft) +" minuuttia ja " + Math.floor(secleft) + " sekuntia.<br><br>";
 }
+
+//---------------------------LUUkku 12-------------------------------------------//
+
+function colorValue(){
+    var paivanVari = document.getElementById("color").value
+   document.body.style.backgroundImage = "none";
+   document.body.style.backgroundColor = paivanVari;
+}
